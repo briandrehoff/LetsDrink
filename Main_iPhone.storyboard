@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Lets Drink View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LetsDrinkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ikf-sc-laa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xjg-jf-jf0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymo-0A-cXL">
+                                <rect key="frame" x="135" y="460" width="51" height="50"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="25"/>
+                                <state key="normal" title="||">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapToPauseButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="G2o-u3-0n7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOA-WX-jcj">
+                                <rect key="frame" x="89" y="261" width="143" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Tap to Start!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapToStartButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="C7u-KB-eVr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="278" translatesAutoresizingMaskIntoConstraints="NO" id="6CQ-BX-JhP">
+                                <rect key="frame" x="21" y="218" width="278" height="132"/>
+                                <string key="text">Loser Drinks
+10</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvs-t1-jDA">
+                                <rect key="frame" x="20" y="460" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ig1-b4-x5K"/>
+                                    <constraint firstAttribute="height" constant="50" id="myA-L7-83G"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="15" maxY="0.0"/>
+                                <state key="normal" image="settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hb4-xx-51Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUS-1Q-A1U">
+                                <rect key="frame" x="109" y="270" width="103" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIm-Mp-luK">
+                                <rect key="frame" x="251" y="460" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="TUT-SC-6gQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="RULES">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rulesButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fm7-KO-dW2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Drink!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlY-X2-baD">
+                                <rect key="frame" x="13" y="190" width="295" height="63"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="53"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pKU-ea-cif">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="aiE-aS-BTh"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="6CQ-BX-JhP" secondAttribute="centerY" id="9di-vl-Wc1"/>
+                            <constraint firstAttribute="trailing" secondItem="cIm-Mp-luK" secondAttribute="trailing" constant="20" symbolic="YES" id="BGA-6L-O3u"/>
+                            <constraint firstItem="pKU-ea-cif" firstAttribute="centerX" secondItem="ymo-0A-cXL" secondAttribute="centerX" id="Fe4-HF-gV4"/>
+                            <constraint firstAttribute="centerX" secondItem="ZOA-WX-jcj" secondAttribute="centerX" id="OLg-kf-fMb"/>
+                            <constraint firstItem="pKU-ea-cif" firstAttribute="top" secondItem="qvs-t1-jDA" secondAttribute="bottom" constant="8" id="R7s-Tc-UqP"/>
+                            <constraint firstItem="qvs-t1-jDA" firstAttribute="bottom" secondItem="cIm-Mp-luK" secondAttribute="bottom" id="Rh0-cl-nGX"/>
+                            <constraint firstItem="qvs-t1-jDA" firstAttribute="top" secondItem="cIm-Mp-luK" secondAttribute="top" id="VFY-E0-ZeE"/>
+                            <constraint firstItem="ymo-0A-cXL" firstAttribute="leading" secondItem="qvs-t1-jDA" secondAttribute="trailing" constant="65" id="bRG-zX-7dL"/>
+                            <constraint firstItem="ZOA-WX-jcj" firstAttribute="top" secondItem="ZlY-X2-baD" secondAttribute="bottom" constant="8" id="cKr-z4-Ub0"/>
+                            <constraint firstItem="qvs-t1-jDA" firstAttribute="bottom" secondItem="ymo-0A-cXL" secondAttribute="bottom" id="cNm-ON-S8z"/>
+                            <constraint firstAttribute="centerX" secondItem="6CQ-BX-JhP" secondAttribute="centerX" id="eRk-dJ-dNT"/>
+                            <constraint firstItem="qvs-t1-jDA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="f6a-Jo-lXD"/>
+                            <constraint firstAttribute="centerX" secondItem="MUS-1Q-A1U" secondAttribute="centerX" id="jpw-OE-5JL"/>
+                            <constraint firstItem="cIm-Mp-luK" firstAttribute="leading" secondItem="ymo-0A-cXL" secondAttribute="trailing" constant="65" id="pCj-j0-pbt"/>
+                            <constraint firstAttribute="centerX" secondItem="ZlY-X2-baD" secondAttribute="centerX" id="r2s-gA-cnr"/>
+                            <constraint firstItem="qvs-t1-jDA" firstAttribute="top" secondItem="ymo-0A-cXL" secondAttribute="top" id="sRs-2U-aif"/>
+                            <constraint firstAttribute="bottom" secondItem="qvs-t1-jDA" secondAttribute="bottom" constant="58" id="uqb-Ov-Bid"/>
+                            <constraint firstAttribute="centerY" secondItem="ZOA-WX-jcj" secondAttribute="centerY" id="xmR-RV-aZa"/>
+                            <constraint firstItem="pKU-ea-cif" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ycU-xE-G8n"/>
+                            <constraint firstAttribute="bottom" secondItem="pKU-ea-cif" secondAttribute="bottom" id="yyf-h1-giT"/>
+                            <constraint firstAttribute="centerY" secondItem="MUS-1Q-A1U" secondAttribute="centerY" id="zfC-xr-5mt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getReadyLabel" destination="MUS-1Q-A1U" id="N0v-8X-CS5"/>
+                        <outlet property="letsDrinkLabel" destination="ZlY-X2-baD" id="xSe-Tr-RLo"/>
+                        <outlet property="loserDrinksLabel" destination="6CQ-BX-JhP" id="itu-ig-pzy"/>
+                        <outlet property="rulesButton" destination="cIm-Mp-luK" id="shI-NV-zsq"/>
+                        <outlet property="settingsButton" destination="qvs-t1-jDA" id="bXR-re-Kzv"/>
+                        <outlet property="tapToPause" destination="ymo-0A-cXL" id="lQM-zV-Vgk"/>
+                        <outlet property="tapToPlay" destination="ZOA-WX-jcj" id="YA2-rP-9US"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-331" y="-24"/>
+        </scene>
+        <!--Lets Drink Settings Controller-->
+        <scene sceneID="NCK-Fs-71d">
+            <objects>
+                <viewController storyboardIdentifier="LetsDrinkSettingsController" id="XLs-VF-u95" customClass="LetsDrinkSettingsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KA0-o6-LcS"/>
+                        <viewControllerLayoutGuide type="bottom" id="pBT-bx-Qae"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P9y-Xf-faL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b3-zy-UF3">
+                                <rect key="frame" x="20" y="126" width="77" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Min Wait:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYY-Pn-htI">
+                                <rect key="frame" x="20" y="163" width="87" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Max Wait:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljw-gM-GK3">
+                                <rect key="frame" x="20" y="200" width="92" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Min Drink:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEo-wE-EwO">
+                                <rect key="frame" x="20" y="237" width="96" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Max Drink:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6K-dv-sx8">
+                                <rect key="frame" x="20" y="274" width="102" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCm-He-UeK">
+                                <rect key="frame" x="126" y="504" width="69" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QMb-WB-kvf"/>
+                                    <constraint firstAttribute="width" constant="69" id="YNt-Tc-oOq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="XLs-VF-u95" eventType="touchUpInside" id="2ZP-ez-Ip5"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minimumValue="2" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="AV5-hL-3re">
+                                <rect key="frame" x="206" y="124" width="94" height="29"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="playersStepper:" destination="XLs-VF-u95" eventType="valueChanged" id="DAy-Xd-c6z"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minimumValue="1" maximumValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="5bX-Cv-m4v">
+                                <rect key="frame" x="206" y="161" width="94" height="29"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="minWaitStepper:" destination="XLs-VF-u95" eventType="valueChanged" id="l6N-IN-XGe"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="1" maximumValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="MJj-kM-JHG">
+                                <rect key="frame" x="206" y="198" width="94" height="29"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="maxWaitStepper:" destination="XLs-VF-u95" eventType="valueChanged" id="FHO-Rh-L4S"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minimumValue="1" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="dmz-Ov-HM5">
+                                <rect key="frame" x="206" y="236" width="94" height="29"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="minDrinkStepper:" destination="XLs-VF-u95" eventType="valueChanged" id="bjs-ee-Ypm"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="1" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="y3n-nF-Pjf">
+                                <rect key="frame" x="206" y="273" width="94" height="29"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="maxDrinkStepper:" destination="XLs-VF-u95" eventType="valueChanged" id="0So-Io-a4w"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPB-Jm-Avd">
+                                <rect key="frame" x="126" y="130" width="53" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbu-AN-gD3">
+                                <rect key="frame" x="126" y="164" width="53" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NT-pj-hWD">
+                                <rect key="frame" x="126" y="201" width="53" height="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgA-Oq-cAw">
+                                <rect key="frame" x="126" y="235" width="53" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8G-Rc-Zi6">
+                                <rect key="frame" x="131" y="277" width="48" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ych-H8-fcU">
+                                <rect key="frame" x="94" y="20" width="118" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MJj-kM-JHG" secondAttribute="trailing" constant="20" id="1cf-rR-G6f"/>
+                            <constraint firstItem="5bX-Cv-m4v" firstAttribute="top" secondItem="AV5-hL-3re" secondAttribute="bottom" constant="8" id="3DK-4J-c8e"/>
+                            <constraint firstAttribute="bottom" secondItem="YCm-He-UeK" secondAttribute="bottom" constant="20" symbolic="YES" id="Cl4-B6-Rs2"/>
+                            <constraint firstItem="ych-H8-fcU" firstAttribute="top" secondItem="P9y-Xf-faL" secondAttribute="top" constant="20" symbolic="YES" id="FMk-OH-xng"/>
+                            <constraint firstAttribute="trailing" secondItem="dmz-Ov-HM5" secondAttribute="trailing" constant="20" id="KxT-tb-lKQ"/>
+                            <constraint firstAttribute="trailing" secondItem="AV5-hL-3re" secondAttribute="trailing" constant="20" id="KyV-R8-qhn"/>
+                            <constraint firstItem="MJj-kM-JHG" firstAttribute="top" secondItem="5bX-Cv-m4v" secondAttribute="bottom" constant="8" id="LW7-bs-IVi"/>
+                            <constraint firstItem="y3n-nF-Pjf" firstAttribute="top" secondItem="dmz-Ov-HM5" secondAttribute="bottom" constant="8" id="R3O-j5-dyH"/>
+                            <constraint firstItem="AV5-hL-3re" firstAttribute="top" secondItem="ych-H8-fcU" secondAttribute="bottom" constant="68" id="RQT-Rh-ZUb"/>
+                            <constraint firstItem="ych-H8-fcU" firstAttribute="leading" secondItem="P9y-Xf-faL" secondAttribute="leading" constant="94" id="SZf-Ba-Lnd"/>
+                            <constraint firstAttribute="trailing" secondItem="y3n-nF-Pjf" secondAttribute="trailing" constant="20" id="TfS-eJ-YHg"/>
+                            <constraint firstAttribute="trailing" secondItem="5bX-Cv-m4v" secondAttribute="trailing" constant="20" id="VeO-98-VYS"/>
+                            <constraint firstItem="dmz-Ov-HM5" firstAttribute="top" secondItem="MJj-kM-JHG" secondAttribute="bottom" constant="9" id="e2Q-ce-YNs"/>
+                            <constraint firstItem="YCm-He-UeK" firstAttribute="centerX" secondItem="P9y-Xf-faL" secondAttribute="centerX" id="nPM-Xf-vAI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2jy-G1-KGc"/>
+                    <connections>
+                        <outlet property="doneButton" destination="YCm-He-UeK" id="yLN-jg-cBm"/>
+                        <outlet property="maxDrinkLabel" destination="x8G-Rc-Zi6" id="hVv-B8-ZRr"/>
+                        <outlet property="maxDrinkStepper" destination="y3n-nF-Pjf" id="qNC-Ul-ht6"/>
+                        <outlet property="maxWaitLabel" destination="9NT-pj-hWD" id="bLh-rk-BIl"/>
+                        <outlet property="maxWaitStepper" destination="MJj-kM-JHG" id="U7I-11-qDM"/>
+                        <outlet property="minDrinkLabel" destination="BgA-Oq-cAw" id="lfd-x1-j5U"/>
+                        <outlet property="minDrinkStepper" destination="dmz-Ov-HM5" id="aIE-Bh-SPc"/>
+                        <outlet property="minWaitLabel" destination="Mbu-AN-gD3" id="Dg2-h9-nTb"/>
+                        <outlet property="minWaitStepper" destination="5bX-Cv-m4v" id="05X-rE-UUs"/>
+                        <outlet property="playersLabel" destination="bPB-Jm-Avd" id="lC6-yH-g3W"/>
+                        <outlet property="playersStepper" destination="AV5-hL-3re" id="ftX-T8-H9t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8E-66-v7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="-24"/>
+        </scene>
+        <!--Lets Drink Rules Controller-->
+        <scene sceneID="zjI-iE-DhI">
+            <objects>
+                <viewController storyboardIdentifier="LetsDrinkRulesController" id="DVX-P1-Ogu" customClass="LetsDrinkRulesController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iVr-PN-lRG"/>
+                        <viewControllerLayoutGuide type="bottom" id="y5x-gU-dHA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="evy-wt-6YE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REY-MV-uOY">
+                                <rect key="frame" x="126" y="504" width="69" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="aCV-B0-Xdi"/>
+                                    <constraint firstAttribute="height" constant="44" id="oZd-qa-0dl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="DVX-P1-Ogu" eventType="touchUpInside" id="9D3-fx-1Bf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RULES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTK-fy-Dpb">
+                                <rect key="frame" x="102" y="20" width="116" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="E7J-ij-hHr"/>
+                                    <constraint firstAttribute="height" constant="41" id="ifX-ca-s5Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSg-eA-MGJ">
+                                <rect key="frame" x="20" y="69" width="280" height="427"/>
+                                <string key="text">The rules for Let's Drink! are simple. After choosing your settings using the button in the bottom left, simply tap the screen to begin playing. After a randomly determined amount of time, based on values chosen, the screen will turn white. When the screen turns white, each player must tap the screen ONCE. When the last player is detected, the screen will turn red and he/she will drink for a number of seconds chosen at random. This cycle will continue to repeat, by itself, until the pause button is pressed. If a player taps the screen more than once, he/she must drink. If there is a tie, both players must drink.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sSg-eA-MGJ" firstAttribute="centerX" secondItem="REY-MV-uOY" secondAttribute="centerX" id="0NE-65-QNl"/>
+                            <constraint firstItem="NTK-fy-Dpb" firstAttribute="top" secondItem="evy-wt-6YE" secondAttribute="top" constant="20" symbolic="YES" id="2d7-0J-KFQ"/>
+                            <constraint firstItem="sSg-eA-MGJ" firstAttribute="centerX" secondItem="NTK-fy-Dpb" secondAttribute="centerX" id="6O3-Md-jfs"/>
+                            <constraint firstAttribute="trailing" secondItem="sSg-eA-MGJ" secondAttribute="trailing" constant="20" symbolic="YES" id="Fax-ia-Iaa"/>
+                            <constraint firstItem="REY-MV-uOY" firstAttribute="top" secondItem="sSg-eA-MGJ" secondAttribute="bottom" constant="8" symbolic="YES" id="G4d-mA-xKw"/>
+                            <constraint firstItem="sSg-eA-MGJ" firstAttribute="leading" secondItem="evy-wt-6YE" secondAttribute="leading" constant="20" symbolic="YES" id="Lte-we-sSv"/>
+                            <constraint firstAttribute="bottom" secondItem="REY-MV-uOY" secondAttribute="bottom" constant="20" symbolic="YES" id="ZDJ-dE-HiN"/>
+                            <constraint firstItem="sSg-eA-MGJ" firstAttribute="top" secondItem="NTK-fy-Dpb" secondAttribute="bottom" constant="8" symbolic="YES" id="rlD-NM-cae"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="REY-MV-uOY" id="c7p-sl-phW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6T-kG-YOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="-24"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings" width="120" height="120"/>
+    </resources>
+</document>
